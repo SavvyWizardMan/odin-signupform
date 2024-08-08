@@ -15,6 +15,13 @@
         <p class="author-img">Photo by <a href="https://unsplash.com/fr/@cayton">Cayton Heath</a> on <a href="https://unsplash.com">Unsplash</a></p>
     </div>
     <div class="container">
+        <div class="hero">
+            <h1>Find the perfect parts for your ride !</h1>
+            <p>Whether you're a DIY enthusiast or a professional mechanic, we've got you covered with a vast selection of high-quality car spare parts.
+                From essential engine components to the latest accessories, our inventory is stocked with everything you need to keep your vehicle running smoothly. <br/>
+                Enjoy unbeatable prices, fast delivery, and hassle-free returns - your car's next upgrade is just a click away.
+            </p>
+        </div>
         <form action="#" method="post">
             <fieldset>
                 
@@ -44,7 +51,7 @@
                 <div class="form-rows">
                     <div>
                         <label for="license_plate">License Plate:</label><br/>
-                        <input type="text" id="license_plate" name="licensePlate" pattern="[a-zA-Z]{2}-[0-9]{3}-[a-zA-Z]{2}" required />
+                        <input type="text" id="license_plate" name="licensePlate" placeholder="XX-DDD-XX" pattern="[a-zA-Z]{2}-[0-9]{3}-[a-zA-Z]{2}" required />
                     </div>
                     <div>
                         <label for="car_brand">Car brand:</label><br/>
@@ -61,6 +68,16 @@
 
                 </div>
 
+                <div class="form-rows">
+                    <div>
+                        <label for="password">Password:</label><br/>
+                        <input type="password" id="password" name="password" minlength="6" required />
+                    </div>
+                    <div>
+                        <label for="password2">Confirm Password:</label><br/>
+                        <input type="password" id="password2" name="password2" minlength="6" required />
+                    </div>
+                </div>
             </fieldset>
 
         <div class="form-bttn"><button type="submit">Join the movement !</button></div>

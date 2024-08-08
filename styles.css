@@ -91,10 +91,23 @@ body{
 
 }
 
+.hero{
+	text-align: justify;
+	padding-left: 10%;
+	padding-bottom: 25px;
+	width: 70%;
+
+	h1{
+		margin-bottom: 10px;
+		font-size: 1.5em;
+		font-weight: 600;
+	}
+} 
+
 .container fieldset{
 	display: flex;
 	flex-direction: column;
-	padding: 8px 10% 16px ;
+	padding: 12px 10% 24px ;
 	border-top: solid gainsboro 1px;
 	border-bottom: solid gainsboro 1px;
 	box-shadow: 8px 5px 10px gainsboro;
@@ -108,6 +121,10 @@ body{
 	input, select{
 		width: 25ch;
 	}
+	label{
+		color: rgb(98, 98, 98);
+	}
+
 }
 
 .container legend{
@@ -124,12 +141,22 @@ body{
 	margin-left: 10%;
 }
 
+
+input:invalid{
+	border-color:red;
+}
+input:valid{
+	border-color: green;
+}
+/* #3d7178 */
 .form-bttn{
 	margin: 2% 10%;
 
 	button{
 		width: 25ch;
 		height: 5ch;
+		background-color: #52949d;
+		border-radius: 2ch;
 		box-shadow: 8px 5px 10px gainsboro;
 	}
 }
